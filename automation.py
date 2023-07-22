@@ -5,7 +5,7 @@ import shutil
 # Set the path to your local repository folder and the paths to the folders
 local_repo_path = 'D:\\Daily Git cpp\\Cpp'
 not_posted_folder = 'D:\\Daily Git cpp\\not posted'
-to_be_posted_folder = 'D:\\Daily Git cpp\\Cpp\\codes'
+to_be_posted_folder = 'D:\\Daily Git cpp\\Cpp'
 
 # Initialize the Git repository object
 repo = Repo(local_repo_path)
