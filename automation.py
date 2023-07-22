@@ -26,7 +26,7 @@ if cpp_files:
     repo.git.add(all=True)
 
     # Commit the changes
-    repo.git.commit('-m', 'Upload new code')
+    repo.git.commit('-m', 'Solution')
 
     # Push the changes to the remote repository
     origin = repo.remote(name='origin')
