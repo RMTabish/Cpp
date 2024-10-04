@@ -1,53 +1,25 @@
-## Step 1: Install OpenCV for Java
+# C++ Tasks Collection
 
-**Download OpenCV Library:**
-- Visit the [OpenCV website](https://opencv.org/releases/) and download the Java library version that matches your system.
-- Extract the downloaded file to a location on your computer.
+This repository contains a variety of small C++ programming tasks that I have completed. These tasks cover basic to intermediate concepts and are designed to reinforce understanding of C++ syntax, algorithms, data structures, and problem-solving approaches.
 
-**Add OpenCV Library to Eclipse:**
-- Open Eclipse IDE.
-- Right-click on your project in the Project Explorer.
-- Navigate to `Build Path` -> `Configure Build Path`.
-- In the Libraries tab, click on `Add External JARs`.
-- Browse to the `opencv\build\java` directory where you extracted the OpenCV library, and select the JAR file (`opencv-xxx.jar`).
-- Click OK to add the JAR to your project's build path.
+## Contents
 
-## Step 2: Configure Native Library Path
+The repository is organized into individual folders or files representing each task, which cover topics such as:
 
-Since OpenCV uses native libraries, you need to configure the native library path to allow Java to find them.
+- **Basic Syntax**: Tasks that focus on understanding and using C++ syntax, data types, and control structures.
+- **Functions**: A collection of tasks demonstrating the use of functions, parameters, and return values.
+- **Loops and Conditionals**: Examples of for, while loops, and conditional statements.
+- **Arrays and Strings**: Basic operations with arrays and strings.
+- **Pointers and References**: Exercises focusing on pointer usage and reference types.
+- **Object-Oriented Programming**: Small projects illustrating classes, objects, inheritance, polymorphism, and encapsulation.
+- **STL (Standard Template Library)**: Usage of vectors, maps, and other STL containers.
 
-**Locate Native Libraries:**
-- Inside the extracted OpenCV directory, navigate to `opencv\build\java\x64` (for 64-bit systems) or `opencv\build\java\x86` (for 32-bit systems).
-- Copy the `.dll` files (Windows), `.so` files (Linux), or `.dylib` files (macOS) depending on your operating system.
+## How to Use
 
-**Set Native Library Path in Eclipse:**
-- In Eclipse, right-click on your project.
-- Go to `Build Path` -> `Configure Build Path`.
-- In the Libraries tab, expand the `opencv-xxx.jar` entry.
-- Select `Native library location` and click `Edit`.
-- Click on `External Folder` and browse to the directory containing the native libraries you copied earlier.
-- Click OK to confirm.
+Each task can be run independently. Simply clone the repository and navigate to the folder containing the task you want to explore.
 
-## Step 3: Run the Code
+To compile and run any task:
 
-**Copy the Code:**
-- Copy the provided Java code into a new class file in your Eclipse project.
-
-**Modify Input and Output Paths:**
-- Modify the `inputImagePath` and `outputImagePath` variables in the `main` method to point to your input image and desired output location.
-
-**Run the Code:**
-- Right-click on your Java file containing the code.
-- Select `Run As` -> `Java Application`.
-
-## Step 4: View the Output
-
-After running the code, check the specified output directory for the processed image. If successful, you should see the segmented result saved as specified.
-
-Following these steps should enable you to set up and run the background removal code in Eclipse. If you encounter any issues, ensure that OpenCV is correctly configured and that the native libraries are accessible to Eclipse.
-
-## DEMO Of Working:
-
-https://github.com/RMTabish/Cpp/assets/91379671/4d61e36f-31e8-4ed5-8d19-f0f9639fb89f
-
-
+```bash
+g++ filename.cpp -o output
+./output
