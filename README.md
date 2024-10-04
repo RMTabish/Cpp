@@ -4,7 +4,7 @@ This repository contains a variety of small C++ programming tasks that I have co
 
 ## Contents
 
-The repository is organized into individual folders or files representing each task, which cover topics such as:
+The repository is organized into individual code files representing each task, which cover topics such as:
 
 - **Basic Syntax**: Tasks that focus on understanding and using C++ syntax, data types, and control structures.
 - **Functions**: A collection of tasks demonstrating the use of functions, parameters, and return values.
